@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Página No encontrada"
+  description="Página no encontrada, página de error"
+>
+  <div class="grid h-screen place-content-center bg-white px-4">
+    <div class="text-center">
+      <h1 class="text-6xl md:text-7xl lg:text-9xl font-black text-gray-300">
+        404
+      </h1>
+
+      <p
+        class="text-2xl my-2 font-bold tracking-tight text-gray-900 lg:text-4xl"
+      >
+        Página no encontrada
+      </p>
+
+      <p class="mt-4 text-gray-500">Lo lamento, no encontramos la página</p>
+
+      <a
+        href="/"
+        class="mt-6 inline-block rounded bg-blue-600 p-5 text-sm md:text-lg lg:text-xl font-bold uppercase text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring w-full"
+      >
+        Ir a inicio
+      </a>
+    </div>
+  </div>
+</Layout>

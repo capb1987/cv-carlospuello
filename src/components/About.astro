@@ -1,0 +1,62 @@
+---
+export interface Acerca {
+  description: Array<string>;
+}
+
+export interface Profiles {
+  profiles: string[];
+}
+import aboutIMG from "../../public/img/fotoAbout.svg";
+import { Image } from "astro:assets";
+
+import { miURL } from "../utils";
+
+const respuesta = await fetch(miURL);
+
+const { about, basics } = await respuesta.json();
+
+const { profiles }: Profiles = basics;
+
+const { description }: Acerca = about;
+
+import RedesSociales from "@/components/RedesSociales.astro";
+---
+
+<section
+  id="acerca-de"
+  class="min-h-screen bg-gradient-to-b from-gray-300 to-gray-400 flex place-items-center"
+>
+  <div class="container mx-auto p-3">
+    <h1 class="text-center text-3xl font-black md:text-5xl">Acerca de Mí</h1>
+    <p
+      class="text-sm sm:text-base my-2 md:my-3 text-center font-semibold text-cyan-500"
+    >
+      Describe quién soy y algunas caracteristicas de mi persona.
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
+      <div class="flex justify-center items-center">
+        <Image
+          class="w-full object-cover rounded-md min-w-[200px] max-w-[500px]"
+          src={aboutIMG}
+          width={200}
+          height={150}
+          alt="Imagen About"
+        />
+      </div>
+      <div class="flex flex-col space-y-3 items-center">
+        <h2 class="text-xl lg:text-2xl font-bold text-zinc-500">¿Quién Soy?</h2>
+
+        <ul class="list-disc space-y-2 w-11/12 p-2 marker:text-emerald-500">
+          {description.map((desc) => <li>{desc}</li>)}
+        </ul>
+
+        <hr
+          class="w-full h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 border-transparent"
+        />
+
+        <RedesSociales profiles={profiles} />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+import IconoRedes from "@/components/IconoRedes";
+export type Profile = {
+  network: string;
+  username: string;
+  url: string;
+};
+const { profiles } = Astro.props;
+---
+
+<div class="w-full md:w-4/5">
+  <ul class="flex gap-2 items-center justify-between flex-col md:flex-row">
+    {
+      profiles.map((profile: Profile, index: number) => (
+        <IconoRedes index={index} profile={profile} client:only="react" />
+      ))
+    }
+  </ul>
+</div>

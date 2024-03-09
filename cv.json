@@ -1,0 +1,233 @@
+{
+  "basics": {
+    "name": "Carlos Andrés Puello Bolaño",
+    "label": "Desarrollador Frontend",
+    "birthday": "10 de Julio de 1987",
+    "image": "https://images2.imgbox.com/3f/d5/JR3k8ImP_o.jpg",
+    "email": "carlos.puellobolano@gmail.com",
+    "phone": "322-647-5914",
+    "url": "https://johndoe.com",
+    "location": {
+      "postalCode": "BQ 080002",
+      "city": "Barranquilla",
+      "countryCode": "CO",
+      "region": "Atlántico"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "krlospuello1987",
+        "url": "https://twitter.com/krlospuello1987"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Carlos Andrés Puello Bolaño",
+        "url": "https://www.linkedin.com/in/carlos-puellobolano/"
+      }
+    ]
+  },
+
+  "about": {
+    "description": [
+      "Ingeniero de Sistemas con conocimientos en Desarrollo Frontend con experiencia de más de un año en diferentes tecnologías.",
+      "Apasionado por el diseño web, en tecnologías que estén a la vanguardia de los diferentes sitios web en el mundo.",
+      "Busco un empleo donde pueda destacar todas mis habilidades como ingeniero y pueda mejorar mis talentos como desarrollador frontend y aspirar a ser un desarrollador Fullstack"
+    ]
+  },
+
+  "work": [
+    {
+      "name": "VoyYo Colombia",
+      "position": "Desarrollador Frontend",
+      "url": "https://voyyo.com.co/",
+      "startDate": "2021-10-01",
+      "endDate": "2022-07-15",
+      "summary": "Emprendimiento de productos y servicios en zonas rurales",
+      "highlights": [
+        "Creación de interfaces graficas por medio de lenguaje PHP y Symfony.",
+        "Utilización de Lenguajes HTML, CSS Y JS.",
+        "Investigación de librerías JavaScript para mejoras del frontend."
+      ]
+    },
+    {
+      "name": "Universidad de Cartagena en convenio con Secretaria de participación y DPS(Departamento de prosperidad social)",
+      "position": "Ingeniero de Sistemas",
+      "url": "https://unicartagena.edu.co/",
+      "startDate": "2014-10-01",
+      "endDate": "2014-12-26",
+      "summary": "Acompañamiento interdisciplinario, contextualizado y flexible para fortalecer las habilidades socio emocionales y de construcción de ciudadanía para 330 participantes del programa JÓVENES EN ACCIÓN.",
+      "highlights": [
+        "Creación de base de datos por medio de un sistema de Gestión de base de datos como Microsoft Access.",
+        "Digitalización de la base de datos."
+      ]
+    },
+    {
+      "name": "Universidad de Cartagena convenio con Distrito de Cartagena",
+      "position": "Ingeniero de Sistemas",
+      "url": "https://unicartagena.edu.co/",
+      "startDate": "2014-10-01",
+      "endDate": "2015-07-15",
+      "summary": "Fortalecimiento De Las Competencias Ciudadanas Y El Ejercicio De Los Derechos Humanos En 50 Instituciones Educativas Oficiales Del Distrito De Cartagena.",
+      "highlights": [
+        "Creación de base de datos por medio de una aplicación distribuida como Microsoft Excel.",
+        "Creación datos estadísticos, gráficos e informes de las 50 Instituciones Educativas.",
+        "Digitalización de datos de las 50 Instituciones educativas."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad del Norte",
+      "url": "https://www.uninorte.edu.co/",
+      "area": "Ingeniería de Software",
+      "studyType": "Especialización",
+      "startDate": "2013-07-13",
+      "endDate": "2015-12-03"
+    },
+    {
+      "institution": "Fundación Universitaria Tecnólogico Comfenalco",
+      "url": "https://tecnologicocomfenalco.edu.co/",
+      "area": "Ingeniería de Sistemas",
+      "studyType": "Universitaria",
+      "startDate": "2010-07-11",
+      "endDate": "2013-03-16"
+    },
+    {
+      "institution": "Fundación Universitaria Tecnólogico Comfenalco",
+      "url": "https://tecnologicocomfenalco.edu.co/",
+      "area": "Tecnología en Sistemas",
+      "studyType": "Tecnología",
+      "startDate": "2006-02-01",
+      "endDate": "2010-09-11"
+    },
+    {
+      "institution": "Colegio de la Esperanza",
+      "url": "https://colegiolaesperanza.com/plataforma/",
+      "area": "N/A",
+      "studyType": "Bachiller",
+      "startDate": "2005-02-01",
+      "endDate": "2005-12-02"
+    }
+  ],
+
+  "languages": [
+    {
+      "nameLanguage": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "nameLanguage": "Inglés",
+      "fluency": "Intermedio"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Leer",
+      "keywords": ["Poesia", "Cultura General", "Ciencia Ficción"]
+    },
+    {
+      "name": "Ver Peliculas",
+      "keywords": ["Ciencia Ficción", "Romanticas", "Ciencia Ficción"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Natalia Cubillos",
+      "reference": "3004042392"
+    },
+    {
+      "name": "Lidys Agamez",
+      "reference": "3004331419"
+    },
+    {
+      "name": "Ana Pombo Gallardo",
+      "reference": "3126861327"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Proyecto Landing Page Real State",
+      "image": "https://images2.imgbox.com/37/e1/oQlHu3vz_o.png",
+      "description": "Proyecto realizado como landing page y por medio de API donde muestra simulación de servicios de una empresa de Arriendo(Real State). Fue uno de mis primeros proyectos realizados fue hecho en HTML, CSS y Javascript donde se muestra por medio de fake API como reqres.in donde se hace los testimonios y permite mostrar las distintas experiencias de usar una gran landing. Un Slider usado llamado splide que es muy liviano y crea unos carruseles demasiado buenos para la experiencia ademas, esta escrito por debajo por Typescript",
+      "techs": ["Javascript", "Webpack", "HTML", "CSS"],
+      "url": "real-state",
+      "viewPage": [
+        {
+          "netlify": "https://realstatewebpackcapb.netlify.app",
+          "github": "https://github.com/capb1987/landing-realstate?tab=readme-ov-file",
+          "youtube": "https://youtu.be/cWk9g2apBdU?si=uhmFAt5zfVMivbFP"
+        }
+      ]
+    },
+    {
+      "name": "Proyecto Landing Page TravelAPP",
+      "image": "https://images2.imgbox.com/8f/8b/s67byzWQ_o.png",
+      "description": "Proyecto realizado con la tecnología React y librerias CSS como Animate.css la cual, es una libreria muy potente que se puede usar parecido a Boostrap con clases que, le produce animaciones en esta landing sencilla se utilizas imagenes o vectores SVG se utilizó create-react-app donde se muestra la descripción se hizo con la metodologia BEM para que se vea mucho mas organizado el Background es dinamico se va cambiando un poco el color y es una de las de mayor orgullo al empezar este mundo. Es una gran página y espero que sea de inspiración de las personas que desean ingresar en este mundo llamado Desarrolladores para darle un toque y soluciones válidas para el mundo.",
+      "techs": ["Javascript", "React", "HTML", "CSS"],
+      "url": "travel-app",
+      "viewPage": [
+        {
+          "netlify": "https://travelappcapb.netlify.app/",
+          "github": "https://github.com/capb1987/landing-dinamicBackground",
+          "youtube": "https://youtu.be/1UusKM1C6VU?si=A-6DL_Ji0QA4lBLf"
+        }
+      ]
+    },
+    {
+      "name": "Proyecto DentalCAPB",
+      "image": "https://images2.imgbox.com/75/d0/EIGfYCYM_o.png",
+      "description": "Proyecto hecho en React que permite crear, listar y eliminar citas que se acumula en una tabla es una excelente herramienta que poco a poco puede ir mejorando en tecnologias y en visualizar. Vale la pena ir a visitar hecha los diferentes hooks de React como useState, useEffect se valida el formulario de manera nativa con React y se agrega la cita sin problema en una tabla que permite visualizar y posteriormente visualiza en caso de ir agregando las citas. Recomendado este proyecto para ir mirando como agregando un leyend en la etiqueta fieldset en el formulario tambien usa la metodologia BEM que permite llevar un orden respectivo y recomendado para tener mas claridad del formulario se usó create-react-app para el desarrollo de esta aplicación",
+      "techs": ["Javascript", "React", "HTML", "CSS"],
+      "url": "dental-capb",
+      "viewPage": [
+        {
+          "netlify": "https://dentalappcapb.netlify.app/",
+          "github": "",
+          "youtube": "https://www.youtube.com/watch?v=vp4dDa3ppaE"
+        }
+      ]
+    },
+    {
+      "name": "Proyecto Criptomonedas",
+      "image": "https://images2.imgbox.com/b4/ff/2Zhl3lNI_o.png",
+      "description": "Proyecto hecho en React con Vite hecho en react con custom hooks y styled components es decir, que se trabaja css desde JS es un proyecto realizado y basado en el proyecto de react de Udemy https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/ y que en verdad permite usar y un verdadero reto que me permite dar una mejor performance de mi aplicación es un proyecto que te permite averiguar en algunas monedas para transformar cuanto vale en Criptomonedas (monedas digitales) muestra la variación de las ultimas 24 hrs y el precio mas alto y mas bajo. Es basado una API de criptomonedas que muestra en tiempo real fue una gran experiencia para mejorar e ir mostrando apps de manera informativa",
+      "techs": ["Javascript", "React", "HTML", "CSS"],
+      "url": "criptomonedas",
+      "viewPage": [
+        {
+          "netlify": "https://crypto-react-capb.netlify.app/",
+          "github": "https://github.com/capb1987/cripto-react-capb",
+          "youtube": ""
+        }
+      ]
+    },
+    {
+      "name": "Proyecto Gastos",
+      "image": "https://images2.imgbox.com/cd/c2/I5TM6PjV_o.png",
+      "description": "Proyecto hecho en React con Vite que permite planificar gastos personales con barras y permite eliminar de manera muy interactiva se usó libreria como React circular Progressbar y React Swippeable List que permite desplazar y usar opciones para hacerlo de manera mucho más interactiva. Basado en gastos de curso de React de Udemy de Juan Pablo de la Torre. Merece la pena si desea ingresar al curso puedes entrar aquí: https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
+      "techs": ["Javascript", "React", "HTML", "CSS"],
+      "url": "planificador-gastos",
+      "viewPage": [
+        {
+          "netlify": "https://controlgastoscapb.netlify.app/",
+          "github": "https://github.com/capb1987/control-gastos",
+          "youtube": ""
+        }
+      ]
+    },
+    {
+      "name": "Proyecto Veterinaria",
+      "image": "https://images2.imgbox.com/40/bc/YXkAVWRS_o.png",
+      "description": "Proyecto de React con Vite puede agregar las respectivas tecnologías, en este proyecto se usó tailwind.css para facilitar las respectivas sintomas fue basado en un proyecto de un curso de Udemy que me dejó grandes enseñanzas y recomiendo con el profesor Juan Pablo de la Torre donde hemos incorporado se usó SweetAlert 2 para notificaciones mucho más vistosas y mejor elaboradas. Es un proyecto que muestra los mejores proyectos que me permitió nuevas enseñanzas para mejorar mis capacidades como Desarrollador. Mira el curso desde esta dirección: https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
+      "techs": ["Javascript", "React", "HTML", "Tailwind"],
+      "url": "veterinaria",
+      "viewPage": [
+        {
+          "netlify": "https://citasreactcapb.netlify.app/",
+          "github": "https://github.com/capb1987/citas-react-capb",
+          "youtube": "https://youtu.be/HZQCKdty4ps?si=UP1DAjpqka1TKuQf"
+        }
+      ]
+    }
+  ]
+}

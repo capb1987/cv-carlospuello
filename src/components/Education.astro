@@ -1,0 +1,34 @@
+---
+export type JsonMain = {
+  education: string[];
+  languages: string[];
+};
+import EducationItem from "@/components/EducationItem.astro";
+import LanguageItem from "@/components/LanguageItem.astro";
+import { miURL } from "@/utils";
+
+const resEducation = await fetch(miURL);
+
+const { education, languages }: JsonMain = await resEducation.json();
+---
+
+<section
+  id="educacion"
+  class="min-h-screen bg-gradient-to-b from-gray-300 from-45%% via-white via-10% to-gray-400 to-45% flex justify-center items-center flex-col"
+>
+  <h1 class="text-center text-3xl font-black md:text-5xl my-6">Educación</h1>
+
+  <div
+    class="grid gap-6 grid-cols-1 lg:grid-cols-2 md:mx-auto md:container p-3 sm:p-4 md:p-6 w-full md:w-10/12"
+  >
+    {education.map((miEducation) => <EducationItem education={miEducation} />)}
+  </div>
+
+  <h3 class="text-center font-bold text-2xl uppercase">Mis Idiomas</h3>
+
+  <div
+    class="grid gap-3 mx-auto container grid-cols-1 md:grid-cols-2 my-4 p-3 w-10/12"
+  >
+    {languages.map((language) => <LanguageItem language={language} />)}
+  </div>
+</section>

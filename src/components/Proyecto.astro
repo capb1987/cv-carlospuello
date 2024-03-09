@@ -1,0 +1,45 @@
+---
+import TechIcons from "@/components/TechIcons";
+const { proyecto } = Astro.props;
+
+const { name, image, description, techs, url } = proyecto;
+
+import { Image } from "astro:assets";
+
+export interface Tecno {
+  tecnologia: string;
+}
+---
+
+<a
+  href={`portafolio/${url}`}
+  class="flex flex-col rounded-md p-4 lg:p-5 w-full min-w-[1fr] bg-zinc-200 hover: hover:text-white transition-colors ease-in duration-300 hover:bg-zinc-400 shadow-sm"
+>
+  <Image
+    src={image}
+    alt={`Imagen ${name}`}
+    class="mb-3 inline-block h-48 object-cover w-full border rounded-md bg-no-repeat bg-center"
+    width={100}
+    height={100}
+    loading="lazy"
+  />
+  <p class="mb-1 text-center font-bold uppercase text-lg font-mono">
+    {name}
+  </p>
+  <p class="text-center
+    text-sm
+    
+    
+    line-clamp-4">
+    {description}
+  </p>
+  <ul
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-center my-2"
+  >
+    {
+      techs.map((tecnologia: Tecno) => (
+        <TechIcons client:only="react" tecnologia={tecnologia} />
+      ))
+    }
+  </ul>
+</a>

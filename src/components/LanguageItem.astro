@@ -1,0 +1,26 @@
+---
+export interface ObjectLanguage {
+  nameLanguage: string;
+  fluency: string;
+}
+
+const { language } = Astro.props;
+
+const { nameLanguage, fluency }: ObjectLanguage = language;
+---
+
+<div
+  class="bg-gradient-to-br from-blue-500 to-emerald-500 p-5 text-slate-50 space-y-2"
+>
+  <p
+    class="flex justify-center items-center md:justify-between flex-col md:flex-row border-b-1 border-slate-50/25 py-3"
+  >
+    <span class="font-bold">Lenguaje:</span>{nameLanguage}
+  </p>
+  <p
+    class="flex justify-center items-center md:justify-between flex-col md:flex-row"
+  >
+    <span class="font-bold">Nivel:</span>
+    {fluency}
+  </p>
+</div>

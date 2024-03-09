@@ -1,0 +1,89 @@
+---
+const { experiencias } = Astro.props;
+
+import MostrarDetalles from "@/components/MostrarDetalles";
+import { formatedFechaCompleta } from "@/utils";
+export interface Trabajo {
+  name: string;
+  position: string;
+  url: string;
+  startDate: string;
+  endDate: string;
+  summary: string;
+  highlights: [string];
+}
+---
+
+{
+  experiencias.map((trabajo: Trabajo) => (
+    <div class="flow-root justify-between flex-col rounded-lg border border-sky-200 py-3 shadow-sm">
+      <dl class="-my-3 divide-y divide-sky-200 text-sm">
+        <div class="grid grid-cols-1 gap-1 p-3 rounded-t-lg bg-white sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900">Empresa</dt>
+          <dd class="text-gray-700 sm:col-span-2 sm:line-clamp-1">
+            {trabajo.name}
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 even:bg-sky-100 sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900">Posición</dt>
+          <dd class="text-gray-700 sm:col-span-2">{trabajo.position}</dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 bg-white sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900">Inicio</dt>
+          <dd class="text-gray-700 sm:col-span-2">
+            {formatedFechaCompleta(trabajo.startDate)}
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 even:bg-sky-100 sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900">Fin</dt>
+          <dd class="text-gray-700 sm:col-span-2">
+            {formatedFechaCompleta(trabajo.endDate)}
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 bg-white sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900">Descripción</dt>
+          <dd class="text-gray-700 sm:col-span-2 text-justify sm:line-clamp-2">
+            {trabajo.highlights.map((descripcion) => (
+              <p class="first-of-type:mt-0 mt-2 mb-2 ">{descripcion}</p>
+            ))}
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 even:bg-sky-100 sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900 h-full">Página Web</dt>
+          <dd class="sm:col-span-2">
+            <a
+              class="text-gray-700 duration-300 font-normal hover:text-blue-900"
+              href={trabajo.url}
+              target="_blank"
+            >
+              {trabajo.url}
+            </a>
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 bg-white sm:grid-cols-3 sm:gap-4">
+          <dt class="font-medium text-gray-900">Detalles</dt>
+          <dd class="text-white sm:col-span-2 text-justify">
+            <MostrarDetalles trabajo={trabajo} client:only="react">
+              Ver detalles
+            </MostrarDetalles>
+          </dd>
+        </div>
+
+        <div class="grid grid-cols-1 gap-1 p-3 even:bg-sky-100 sm:grid-cols-3 sm:gap-4 rounded-b-lg">
+          <dt class="font-medium text-gray-900  h-full">Objetivos</dt>
+          <dd class="sm:col-span-2 md:line-clamp-2">
+            <ol>
+              <li class="text-zinc-500">{trabajo.summary}</li>
+            </ol>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  ))
+}

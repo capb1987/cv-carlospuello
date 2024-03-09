@@ -1,0 +1,72 @@
+---
+const { education } = Astro.props;
+
+export type EducationItems = {
+  institution: string;
+  url: string;
+  area: string;
+  studyType: string;
+  startDate: string;
+  endDate: string;
+};
+
+const {
+  institution,
+  url,
+  area,
+  studyType,
+  startDate,
+  endDate,
+}: EducationItems = education;
+
+import { parsedDate } from "@/utils";
+---
+
+<div
+  class="overflow-hidden rounded text-gray-500 shadow-slate-200 shadow-sm bg-gradient-to-br from-blue-300 via-slate-50 to-emerald-200"
+>
+  <div class="p-3 md:p-6 flex justify-between flex-col h-full">
+    <header
+      class="mb-4 text-center space-y-1 flex justify-between flex-col items-center"
+    >
+      <h3 class="text-base md:text-xl font-bold text-slate-700">
+        {institution}
+      </h3>
+      <a
+        class="text-xs md:text-sm text-emerald-500 w-1/2 p-3 transition-colors ease-linear duration-500 hover:text-emerald-600 hover:font-bold"
+        href={url}
+        target="_blank">Ir a la página</a
+      >
+    </header>
+
+    <>
+      <ul>
+        <li
+          class={`${area === "N/A" ? "hidden" : "block"} flex justify-center items-center md:justify-between flex-col md:flex-row border-b-1 border-slate-200 p-2`}
+        >
+          <span class="font-medium">Titulo:</span>{area}
+        </li>
+        <li
+          class="flex justify-center items-center md:justify-between flex-col md:flex-row border-b-1 border-slate-200 p-2"
+        >
+          <span class="font-medium">Tipo de Estudio:</span>{studyType}
+        </li>
+        <li
+          class="flex justify-center items-center md:justify-between flex-col md:flex-row border-b-1 border-slate-200 p-2"
+        >
+          <span class="font-medium">Fecha de Inicio:</span>{
+            parsedDate(startDate)
+          }
+        </li>
+        <li
+          class="flex justify-center items-center md:justify-between flex-col md:flex-row last-of-type:border-b-0 last-of-type:border-slate-200 p-2"
+        >
+          <span class="font-medium">Fecha Finalización:</span>{
+            parsedDate(endDate)
+          }
+        </li>
+      </ul>
+    </>
+  </div>
+</div>
+<!-- End Card with subtitle -->
