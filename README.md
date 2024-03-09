@@ -5,9 +5,13 @@
 Fue creada con Astro para el uso de mi portafolio personal aqui puede destacar todo sobre mi CV el cuál contiene:
 
 -Inicio
+
 -Acerca de mí
+
 -Experiencia
+
 -Educación
+
 -Portafolio
 
 -Inicio: Muestra info de mí y mi CV y mi Canal de Youtube.
