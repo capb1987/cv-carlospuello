@@ -147,7 +147,7 @@
   "projects": [
     {
       "name": "Proyecto Landing Page Real State",
-      "image": "/img/portafolio/realState.png",
+      "image": "/img/portafolio/realState.svg",
       "description": "Proyecto realizado como landing page y por medio de API donde muestra simulación de servicios de una empresa de Arriendo(Real State). Fue uno de mis primeros proyectos realizados fue hecho en HTML, CSS y Javascript donde se muestra por medio de fake API como reqres.in donde se hace los testimonios y permite mostrar las distintas experiencias de usar una gran landing. Un Slider usado llamado splide que es muy liviano y crea unos carruseles demasiado buenos para la experiencia ademas, esta escrito por debajo por Typescript",
       "techs": ["Javascript", "Webpack", "HTML", "CSS"],
       "url": "real-state",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Proyecto Landing Page TravelAPP",
-      "image": "/img/portafolio/travelApp.png",
+      "image": "/img/portafolio/travelApp.svg",
       "description": "Proyecto realizado con la tecnología React y librerias CSS como Animate.css la cual, es una libreria muy potente que se puede usar parecido a Boostrap con clases que, le produce animaciones en esta landing sencilla se utilizas imagenes o vectores SVG se utilizó create-react-app donde se muestra la descripción se hizo con la metodologia BEM para que se vea mucho mas organizado el Background es dinamico se va cambiando un poco el color y es una de las de mayor orgullo al empezar este mundo. Es una gran página y espero que sea de inspiración de las personas que desean ingresar en este mundo llamado Desarrolladores para darle un toque y soluciones válidas para el mundo.",
       "techs": ["Javascript", "React", "HTML", "CSS"],
       "url": "travel-app",
@@ -175,7 +175,7 @@
     },
     {
       "name": "Proyecto DentalCAPB",
-      "image": "/img/portafolio/dentalApp.png",
+      "image": "/img/portafolio/dentalApp.svg",
       "description": "Proyecto hecho en React que permite crear, listar y eliminar citas que se acumula en una tabla es una excelente herramienta que poco a poco puede ir mejorando en tecnologias y en visualizar. Vale la pena ir a visitar hecha los diferentes hooks de React como useState, useEffect se valida el formulario de manera nativa con React y se agrega la cita sin problema en una tabla que permite visualizar y posteriormente visualiza en caso de ir agregando las citas. Recomendado este proyecto para ir mirando como agregando un leyend en la etiqueta fieldset en el formulario tambien usa la metodologia BEM que permite llevar un orden respectivo y recomendado para tener mas claridad del formulario se usó create-react-app para el desarrollo de esta aplicación",
       "techs": ["Javascript", "React", "HTML", "CSS"],
       "url": "dental-capb",
@@ -189,7 +189,7 @@
     },
     {
       "name": "Proyecto Criptomonedas",
-      "image": "/img/portafolio/cotizadorCripto.png",
+      "image": "/img/portafolio/cotizadorCripto.svg",
       "description": "Proyecto hecho en React con Vite hecho en react con custom hooks y styled components es decir, que se trabaja css desde JS es un proyecto realizado y basado en el proyecto de react de Udemy https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/ y que en verdad permite usar y un verdadero reto que me permite dar una mejor performance de mi aplicación es un proyecto que te permite averiguar en algunas monedas para transformar cuanto vale en Criptomonedas (monedas digitales) muestra la variación de las ultimas 24 hrs y el precio mas alto y mas bajo. Es basado una API de criptomonedas que muestra en tiempo real fue una gran experiencia para mejorar e ir mostrando apps de manera informativa",
       "techs": ["Javascript", "React", "HTML", "CSS"],
       "url": "criptomonedas",
@@ -203,7 +203,7 @@
     },
     {
       "name": "Proyecto Gastos",
-      "image": "/img/portafolio/gastosReact.png",
+      "image": "/img/portafolio/gastosReact.svg",
       "description": "Proyecto hecho en React con Vite que permite planificar gastos personales con barras y permite eliminar de manera muy interactiva se usó libreria como React circular Progressbar y React Swippeable List que permite desplazar y usar opciones para hacerlo de manera mucho más interactiva. Basado en gastos de curso de React de Udemy de Juan Pablo de la Torre. Merece la pena si desea ingresar al curso puedes entrar aquí: https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
       "techs": ["Javascript", "React", "HTML", "CSS"],
       "url": "planificador-gastos",
@@ -217,7 +217,7 @@
     },
     {
       "name": "Proyecto Veterinaria",
-      "image": "/img/portafolio/citasVeterinaria.png",
+      "image": "/img/portafolio/citasVeterinaria.svg",
       "description": "Proyecto de React con Vite puede agregar las respectivas tecnologías, en este proyecto se usó tailwind.css para facilitar las respectivas sintomas fue basado en un proyecto de un curso de Udemy que me dejó grandes enseñanzas y recomiendo con el profesor Juan Pablo de la Torre donde hemos incorporado se usó SweetAlert 2 para notificaciones mucho más vistosas y mejor elaboradas. Es un proyecto que muestra los mejores proyectos que me permitió nuevas enseñanzas para mejorar mis capacidades como Desarrollador. Mira el curso desde esta dirección: https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
       "techs": ["Javascript", "React", "HTML", "Tailwind"],
       "url": "veterinaria",
